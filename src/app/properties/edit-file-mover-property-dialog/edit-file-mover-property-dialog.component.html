@@ -1,0 +1,31 @@
+<h1 mat-dialog-title>Edit property</h1>
+
+<form [formGroup]="form" (ngSubmit)="submitForm()">
+  <mat-dialog-content class="mat-typography">
+    <div formGroupName="property">
+      <mat-form-field class="form-field">
+        <mat-label for="name">Name</mat-label>
+        <input matInput id="name" formControlName="name" />
+      </mat-form-field>
+
+      <mat-form-field class="form-field">
+        <mat-label for="value">Value</mat-label>
+        <input matInput id="value" formControlName="value" />
+      </mat-form-field>
+    </div>
+  </mat-dialog-content>
+
+  <mat-dialog-actions align="end">
+    <button
+      type="submit"
+      [disabled]="form.invalid"
+      [mat-dialog-close]="data"
+      mat-raised-button
+      color="primary"
+    >
+      Save
+    </button>
+
+    <button mat-raised-button mat-dialog-close>Cancel</button>
+  </mat-dialog-actions>
+</form>

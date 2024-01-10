@@ -1,0 +1,302 @@
+{
+  "version": "6.0",
+  "nxVersion": "17.2.8",
+  "deps": {
+    "@angular/animations": "^17.0.8",
+    "@angular/cdk": "^17.0.4",
+    "@angular/common": "^17.0.8",
+    "@angular/compiler": "^17.0.8",
+    "@angular/core": "^17.0.8",
+    "@angular/forms": "^17.0.8",
+    "@angular/material": "^17.0.4",
+    "@angular/platform-browser": "^17.0.8",
+    "@angular/platform-browser-dynamic": "^17.0.8",
+    "@angular/router": "^17.0.8",
+    "@ngrx/effects": "^17.0.1",
+    "@ngrx/store": "^17.0.1",
+    "@ngrx/store-devtools": "^17.0.1",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "^0.14.2",
+    "@angular-devkit/build-angular": "^17.0.9",
+    "@angular-eslint/builder": "17.2.0",
+    "@angular-eslint/eslint-plugin": "17.2.0",
+    "@angular-eslint/eslint-plugin-template": "17.2.0",
+    "@angular-eslint/schematics": "17.2.0",
+    "@angular-eslint/template-parser": "17.2.0",
+    "@angular/cli": "~17.0.9",
+    "@angular/compiler-cli": "^17.0.8",
+    "@ngrx/eslint-plugin": "^17.0.1",
+    "@ngrx/schematics": "^17.0.1",
+    "@types/jasmine": "~4.3.0",
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "@typescript-eslint/parser": "^6.10.0",
+    "eslint": "^8.53.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.2",
+    "jasmine-core": "~4.6.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.2.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.0.0",
+    "prettier": "^3.1.1",
+    "prettier-eslint": "^16.2.0",
+    "typescript": "^5.2.2"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {},
+    "nonProjectFiles": [
+      {
+        "file": ".editorconfig",
+        "hash": "6686520031028425313"
+      },
+      {
+        "file": ".eslintrc.json",
+        "hash": "9433069758063149616"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "13044518069027839699"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "5331566439708925252"
+      },
+      {
+        "file": ".vscode/launch.json",
+        "hash": "17038929134016848735"
+      },
+      {
+        "file": ".vscode/settings.json",
+        "hash": "11253681595574135220"
+      },
+      {
+        "file": ".vscode/tasks.json",
+        "hash": "5336636969995539451"
+      },
+      {
+        "file": "README.md",
+        "hash": "10593953867593849416"
+      },
+      {
+        "file": "angular.json",
+        "hash": "18350093196573969552"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "8548941838979774505"
+      },
+      {
+        "file": "package.json",
+        "hash": "3392547606765382187"
+      },
+      {
+        "file": "src/_theme.scss",
+        "hash": "2902180704264090131"
+      },
+      {
+        "file": "src/app/app.component.html",
+        "hash": "16991661365118597096"
+      },
+      {
+        "file": "src/app/app.component.scss",
+        "hash": "2551773470014847591"
+      },
+      {
+        "file": "src/app/app.component.spec.ts",
+        "hash": "3208917801573623795"
+      },
+      {
+        "file": "src/app/app.component.ts",
+        "hash": "16389407170277484129"
+      },
+      {
+        "file": "src/app/app.config.ts",
+        "hash": "1379694491826289314"
+      },
+      {
+        "file": "src/app/app.routes.ts",
+        "hash": "13520530859022745521"
+      },
+      {
+        "file": "src/app/data/+state/file-mover-selectors.ts",
+        "hash": "14221358599922168409"
+      },
+      {
+        "file": "src/app/data/+state/file-mover.actions.ts",
+        "hash": "6971632999673684124"
+      },
+      {
+        "file": "src/app/data/+state/file-mover.effects.ts",
+        "hash": "11805011288430566794"
+      },
+      {
+        "file": "src/app/data/+state/file-mover.reducers.ts",
+        "hash": "16824875982919881920"
+      },
+      {
+        "file": "src/app/data/file-mover.facade.ts",
+        "hash": "15376457595731691898"
+      },
+      {
+        "file": "src/app/data/file-mover.service.ts",
+        "hash": "16342881369693029310"
+      },
+      {
+        "file": "src/app/data/model/file-mover-event.ts",
+        "hash": "14363841729613784082"
+      },
+      {
+        "file": "src/app/data/model/file-mover-property.ts",
+        "hash": "8483563845317960666"
+      },
+      {
+        "file": "src/app/data/model/file-rule.ts",
+        "hash": "1022559607724472737"
+      },
+      {
+        "file": "src/app/events/events.routes.ts",
+        "hash": "13286489659555699870"
+      },
+      {
+        "file": "src/app/events/events/events.component.html",
+        "hash": "15376634759663824295"
+      },
+      {
+        "file": "src/app/events/events/events.component.scss",
+        "hash": "3882671607388026516"
+      },
+      {
+        "file": "src/app/events/events/events.component.spec.ts",
+        "hash": "3519066939354377852"
+      },
+      {
+        "file": "src/app/events/events/events.component.ts",
+        "hash": "1175973570904845897"
+      },
+      {
+        "file": "src/app/properties/edit-file-mover-property-dialog/edit-file-mover-property-dialog.component.html",
+        "hash": "13711775170678116636"
+      },
+      {
+        "file": "src/app/properties/edit-file-mover-property-dialog/edit-file-mover-property-dialog.component.scss",
+        "hash": "17212526625274844930"
+      },
+      {
+        "file": "src/app/properties/edit-file-mover-property-dialog/edit-file-mover-property-dialog.component.spec.ts",
+        "hash": "6340032820879028000"
+      },
+      {
+        "file": "src/app/properties/edit-file-mover-property-dialog/edit-file-mover-property-dialog.component.ts",
+        "hash": "7334136012102937519"
+      },
+      {
+        "file": "src/app/properties/properties.routes.ts",
+        "hash": "2024021043929466736"
+      },
+      {
+        "file": "src/app/properties/properties/properties.component.html",
+        "hash": "8282026659251626182"
+      },
+      {
+        "file": "src/app/properties/properties/properties.component.scss",
+        "hash": "3882671607388026516"
+      },
+      {
+        "file": "src/app/properties/properties/properties.component.spec.ts",
+        "hash": "1220818422479667059"
+      },
+      {
+        "file": "src/app/properties/properties/properties.component.ts",
+        "hash": "14341586912187545248"
+      },
+      {
+        "file": "src/app/rules/delete-file-rule-dialog/delete-file-rule-dialog.component.html",
+        "hash": "10705993197503447840"
+      },
+      {
+        "file": "src/app/rules/delete-file-rule-dialog/delete-file-rule-dialog.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/rules/delete-file-rule-dialog/delete-file-rule-dialog.component.spec.ts",
+        "hash": "15660526711318773483"
+      },
+      {
+        "file": "src/app/rules/delete-file-rule-dialog/delete-file-rule-dialog.component.ts",
+        "hash": "5971879882286151808"
+      },
+      {
+        "file": "src/app/rules/file-rule-dialog/file-rule-dialog.component.html",
+        "hash": "15651524430783562080"
+      },
+      {
+        "file": "src/app/rules/file-rule-dialog/file-rule-dialog.component.scss",
+        "hash": "17212526625274844930"
+      },
+      {
+        "file": "src/app/rules/file-rule-dialog/file-rule-dialog.component.spec.ts",
+        "hash": "6029440531641774106"
+      },
+      {
+        "file": "src/app/rules/file-rule-dialog/file-rule-dialog.component.ts",
+        "hash": "2647958467804431321"
+      },
+      {
+        "file": "src/app/rules/rules.routes.ts",
+        "hash": "2323351966368322074"
+      },
+      {
+        "file": "src/app/rules/rules/rules.component.html",
+        "hash": "6451640265257461269"
+      },
+      {
+        "file": "src/app/rules/rules/rules.component.scss",
+        "hash": "2544014758900512521"
+      },
+      {
+        "file": "src/app/rules/rules/rules.component.spec.ts",
+        "hash": "6911472616751803272"
+      },
+      {
+        "file": "src/app/rules/rules/rules.component.ts",
+        "hash": "496239675652873867"
+      },
+      {
+        "file": "src/assets/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/favicon.ico",
+        "hash": "3464744996580215640"
+      },
+      {
+        "file": "src/index.html",
+        "hash": "4930532195527067580"
+      },
+      {
+        "file": "src/main.ts",
+        "hash": "732663438483983849"
+      },
+      {
+        "file": "src/styles.scss",
+        "hash": "15915185699692601469"
+      },
+      {
+        "file": "tsconfig.app.json",
+        "hash": "17337579397915052279"
+      },
+      {
+        "file": "tsconfig.json",
+        "hash": "1047940026627514556"
+      },
+      {
+        "file": "tsconfig.spec.json",
+        "hash": "15575553540147145788"
+      }
+    ]
+  }
+}

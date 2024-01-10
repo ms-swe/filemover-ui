@@ -1,0 +1,35 @@
+<h1 mat-dialog-title>New rule</h1>
+
+<form [formGroup]="form" (ngSubmit)="submitForm()">
+  <mat-dialog-content class="mat-typography">
+    <div formGroupName="rule">
+      <mat-form-field class="form-field">
+        <mat-label for="pattern">Pattern</mat-label>
+        <input matInput id="pattern" formControlName="pattern" />
+      </mat-form-field>
+
+      <mat-form-field class="form-field">
+        <mat-label for="targetFolder">Target Folder</mat-label>
+        <input matInput id="targetFolder" formControlName="targetFolder" />
+      </mat-form-field>
+    </div>
+  </mat-dialog-content>
+
+  <mat-dialog-actions align="end">
+    <button
+      type="submit"
+      [disabled]="form.invalid"
+      [mat-dialog-close]="data"
+      mat-raised-button
+      color="primary"
+    >
+      @if (data.mode === "add") {
+        Add
+      } @else {
+        Update
+      }
+    </button>
+
+    <button mat-raised-button mat-dialog-close>Cancel</button>
+  </mat-dialog-actions>
+</form>

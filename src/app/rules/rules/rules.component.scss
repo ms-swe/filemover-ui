@@ -1,0 +1,55 @@
+.horz-area {
+  width: 80%;
+  min-width: 200px;
+  max-width: 1200px;
+}
+
+.add-rule-button {
+  float: right;
+}
+
+.table {
+  width: 80%;
+  min-width: 200px;
+  max-width: 1200px;
+}
+
+.mat-column-edit {
+  white-space: unset !important;
+  width: 10% !important;
+}
+
+.mat-column-delete {
+  white-space: unset !important;
+  width: 10% !important;
+}
+
+.cdk-drag-placeholder {
+  background: #eee;
+  min-height: 60px;
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.cdk-drag-placeholder td {
+  // display: none;
+  opacity: 20%;
+}
+
+.cdk-drag-preview {
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 87%; // you can add in px also
+  height: 11%; // this line added
+  box-shadow:
+    0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 8px 10px 1px rgba(0, 0, 0, 0.14),
+    0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.no-data {
+  padding: 16px;
+}
+
+.temp {
+  color: red;
+}

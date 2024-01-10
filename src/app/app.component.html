@@ -1,0 +1,34 @@
+<mat-sidenav-container>
+  <mat-sidenav #sidenav class="sidenav" (click)="sidenav.close()">
+    <mat-nav-list>
+      <a mat-list-item routerLink="/events" routerLinkActive="active">
+        <mat-icon matListIcon>task</mat-icon>
+        <span class="a-text">Events</span>
+      </a>
+      <a mat-list-item routerLink="/rules" routerLinkActive="active">
+        <mat-icon matListIcon>rule_folder</mat-icon>
+        <span class="a-text">Rules</span>
+      </a>
+      <a mat-list-item routerLink="/properties" routerLinkActive="active">
+        <mat-icon matListIcon>settings</mat-icon>
+        <span class="a-text">Properties</span>
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content class="sidenav-content">
+    <mat-toolbar class="toolbar" color="primary">
+      <button
+        mat-icon-button
+        aria-label="Menu button"
+        (click)="sidenav.toggle()"
+      >
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>File Mover</span>
+    </mat-toolbar>
+
+    <main class="content">
+      <router-outlet></router-outlet>
+    </main>
+  </mat-sidenav-content>
+</mat-sidenav-container>
