@@ -56,6 +56,16 @@ export class FileMoverFacade {
     fileMoverFeature.selectLoadingFileMoverEvents,
   );
 
+  async deleteAllFileMoverEvents(): Promise<void> {
+    this.store.dispatch(fileMoverActions.deleteAllFileMoverEvents());
+  }
+
+  navigateFileMoverEvent(id: number) {
+    this.store.dispatch(
+      fileMoverActions.navigateFileMoverEvent({ fileMoverEventId: id }),
+    );
+  }
+
   readonly fileMoverProperties = this.store.selectSignal(
     fileMoverFeature.selectFileMoverProperties,
   );

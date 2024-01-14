@@ -17,6 +17,12 @@ export const fileMoverActions = createActionGroup({
     'load file mover events': emptyProps(),
     'file mover events loaded': props<{ fileMoverEvents: FileMoverEvent[] }>(),
 
+    'delete all file mover events': emptyProps(),
+    'all file mover events deleted': emptyProps(),
+
+    'navigate file mover event': props<{ fileMoverEventId: number }>(),
+    'file mover event navigated': emptyProps(),
+
     'create file rule': props<{ fileRule: FileRule }>(),
     'file rule created': props<{ fileRule: FileRule }>(),
 

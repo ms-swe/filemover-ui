@@ -1,44 +1,24 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  effect,
-  inject,
-} from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FileMoverFacade } from 'src/app/data/file-mover.facade';
-import { FileMoverEvent } from 'src/app/data/model/file-mover-event';
-import { MatTableModule, MatTableDataSource } from '@angular/material/table';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
+import { LifeEventViewComponent } from '../life-event-view/life-event-view.component';
+import { HistoricalEventViewComponent } from '../historical-event-view/historical-event-view.component';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'fm-events',
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [CommonModule, MatTableModule, MatFormFieldModule, MatInputModule],
   templateUrl: './events.component.html',
   styleUrls: ['./events.component.scss'],
+  imports: [
+    LifeEventViewComponent,
+    HistoricalEventViewComponent,
+    MatIconModule,
+  ],
 })
 export class EventsComponent {
-  private facade = inject(FileMoverFacade);
+  showingHistoricalEvents = signal<boolean>(false);
 
-  fileMoverEvents = this.facade.fileMoverEvents;
-  loading = this.facade.loadingFileMoverEvents;
-
-  displayedColumns: string[] = ['description', 'created'];
-
-  dataSource = new MatTableDataSource<FileMoverEvent>([]);
-
-  constructor() {
-    this.facade.loadFileMoverEvents();
-
-    effect(() => {
-      this.dataSource.data = this.fileMoverEvents();
-    });
-  }
-
-  applyFilter(event: Event) {
-    const filterValue = (event.target as HTMLInputElement).value;
-    this.dataSource.filter = filterValue.trim().toLowerCase();
+  showHistoricalEvents() {
+    this.showingHistoricalEvents.set(true);
   }
 }

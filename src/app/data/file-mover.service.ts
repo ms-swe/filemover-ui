@@ -43,6 +43,16 @@ export class FileMoverService {
         }),
       );
   }
+  deleteAllFileMoverEvents() {
+    return this.http.delete(`${this.apiUrl}/filemoverevents`);
+  }
+
+  navigateFileMoverEvent(fileMoverEventId: number): Observable<string> {
+    return this.http.get(
+      `${this.apiUrl}/filemoverevents/navigations/${fileMoverEventId}`,
+      { responseType: 'text' },
+    );
+  }
 
   createFileRule(fileRule: FileRule): Observable<FileRule> {
     return this.http.post<FileRule>(`${this.apiUrl}/filerule`, fileRule);

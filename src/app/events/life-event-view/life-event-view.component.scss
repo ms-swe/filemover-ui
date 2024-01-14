@@ -1,0 +1,48 @@
+.event {
+  border: 1px solid darkgray;
+  padding: 0.2em;
+  margin: 0.3em;
+  animation: event-animation 30s backwards;
+}
+
+.event-new-icon {
+  width: 10em;
+  visibility: hidden;
+  animation: event-animation-new 30s backwards;
+}
+
+@keyframes event-animation {
+  0% {
+    background-color: rgb(240, 50, 50);
+  }
+
+  99% {
+    background-color: rgb(240, 180, 180);
+  }
+}
+// @keyframes event-animation {
+//   from {
+//     background-color: lightcoral;
+//   }
+// }
+
+@keyframes event-animation-new {
+  from {
+    visibility: visible;
+  }
+}
+.arrow-icon {
+  vertical-align: -4px;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+}
+
+.navigate-button {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.vert-center {
+  display: flex;
+  align-items: center;
+}

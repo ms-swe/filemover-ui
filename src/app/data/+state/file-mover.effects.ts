@@ -42,6 +42,27 @@ export class FileMoverEffects {
     );
   });
 
+  deleteAllFileMoverEvents = createEffect(() => {
+    return this.actions$.pipe(
+      ofType(fileMoverActions.deleteAllFileMoverEvents),
+      concatMap(() =>
+        this.fileMoverService
+          .deleteAllFileMoverEvents()
+          .pipe(map(() => fileMoverActions.allFileMoverEventsDeleted())),
+      ),
+    );
+  });
+
+  navigateFileMoverEvent = createEffect(() => {
+    return this.actions$.pipe(
+      ofType(fileMoverActions.navigateFileMoverEvent),
+      concatMap((a) =>
+        this.fileMoverService.navigateFileMoverEvent(a.fileMoverEventId),
+      ),
+      map(() => fileMoverActions.fileMoverEventNavigated()),
+    );
+  });
+
   createFileRule = createEffect(() => {
     return this.actions$.pipe(
       ofType(fileMoverActions.createFileRule),

@@ -93,6 +93,20 @@ export const fileMoverFeature = createFeature({
       },
     ),
 
+    on(fileMoverActions.deleteAllFileMoverEvents, (state): FileMoverState => {
+      return {
+        ...state,
+      };
+    }),
+
+    on(fileMoverActions.allFileMoverEventsDeleted, (state): FileMoverState => {
+      const fileMoverEvents = [] as FileMoverEvent[];
+      return {
+        ...state,
+        fileMoverEvents,
+      };
+    }),
+
     on(fileMoverActions.fileRuleCreated, (state, action): FileMoverState => {
       const fileRule = action.fileRule;
       const fileRules = [fileRule, ...state.fileRules];

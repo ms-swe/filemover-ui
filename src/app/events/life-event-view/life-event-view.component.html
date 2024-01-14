@@ -1,0 +1,23 @@
+@for (recentEvent of recentEvents(); track recentEvent.id) {
+  <div class="event">
+    <span class="event-new-icon">
+      <mat-icon class="arrow-icon">bolt</mat-icon>
+    </span>
+    <button
+      class="navigate-button"
+      mat-icon-button
+      (click)="navigate(recentEvent)"
+    >
+      <div class="vert-center">
+        <mat-icon>north_east</mat-icon>
+        <div>Navigate</div>
+      </div>
+    </button>
+    {{ recentEvent.created | date: "EEEE - yyyy MMM dd - HH:mm:ss" }} |
+    {{ recentEvent.fileName }}
+    <mat-icon class="arrow-icon">arrow_forward</mat-icon>
+    {{ recentEvent.targetFolder }}
+  </div>
+} @empty {
+  <div>There are no recent events</div>
+}

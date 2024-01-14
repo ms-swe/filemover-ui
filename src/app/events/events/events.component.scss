@@ -1,9 +1,17 @@
-.table {
-  width: 80%;
-  min-width: 200px;
-  max-width: 1200px;
+.area {
+  border: 1px solid gray;
+  padding: 1em;
+  padding-top: 0;
+  margin-bottom: 2em;
 }
 
-.no-data {
-  padding: 16px;
+.show-historical-events {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  display: block;
+}
+
+.vert-center {
+  display: flex;
+  align-items: center;
 }
